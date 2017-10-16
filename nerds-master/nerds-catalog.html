@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Нёрдс</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+    	<div class="container clearfix">
+    		<div class="logo">
+    			<a href="index.html"><img src="img/logo.png" alt="Нёрдс"></a>
+    		</div>
+    		<nav class="main-navigation">
+    			<ul>
+    				<li>
+    					<a href="#">Студия</a>
+    				</li>
+    				<li>
+    					<a href="#">Клиенты</a>
+    				</li>
+    				<li>
+    					<span class="activ">Магазин</span>
+    				</li>
+    				<li>
+    					<a href="#">Контакты</a>
+    				</li>
+    			</ul>
+    		</nav>
+        <div class="user-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
+        <div class="welcome">
+          <span>Добро пожаловать в магазин готовых макетов</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+    	<div class="content clearfix">
+        <div class="content-left">
+          <form method="post" action="">
+            <div class="selection">
+              <label for="amount" class="selection-name">Стоимость:</label>
+              <div class="price-slider">
+                <div id="slider-range"></div>
+              </div>
+              <label for="amount-form" class="form-to">От</label>
+              <input type="text" id="amount-form" readonly="" class="output form-to">
+              <label for="amount-to" class="form-to">До</label>
+              <input type="text" id="amount-to" readonly="" class="output form-to">
+            </div>
+            <div class="selection">
+              <label class="selection-name">Сетка:</label>
+              <input id="radio-1" name="radio" type="radio" checked>
+              <label for="radio-1">Адаптивная</label>
+              <input id="radio-2" name="radio" type="radio">
+              <label for="radio-2">Фиксированная</label>
+              <input id="radio-3" name="radio" type="radio">
+              <label for="radio-3">Резиновая</label>
+            </div>
+            <div class="selection">
+              <label class="selection-name">Особенности:</label>
+              <input id="checkbox-1" type="checkbox" checked>
+              <label for="checkbox-1">Слайдер</label>
+              <input id="checkbox-2" type="checkbox">
+              <label for="checkbox-2">Блок преимуществ</label>
+              <input id="checkbox-3" type="checkbox">
+              <label for="checkbox-3">Новости</label>
+              <input id="checkbox-4" type="checkbox">
+              <label for="checkbox-4">Галерея</label>
+              <input id="checkbox-5" type="checkbox">
+              <label for="checkbox-5">Корзина</label>
+            </div>
+            <input class="btn btn-show" type="submit" value="Показать">
+          </form>
+        </div>
+        <div class="content-right">
+          <div class="sort clearfix">
+            <ul class="sort-product">
+              <li class="sort-nameproduct">Сортировать:</li>
+              <li>
+                <a class="sort-name" href="#">По цене</a>
+              </li>
+              <li>
+                <a class="sort-name" href="#">По типу</a>
+              </li>
+              <li>
+                <a class="sort-name" href="#">По функционалу</a>
+              </li>
+            </ul>
+            <div class="arrows">
+              <a class="arrow arrow-down" href="#">вниз</a>
+              <a class="arrow arrow-up" href="#">вверх</a>
+            </div>
+          </div>
+          <div class="products clearfix">
+            <section class="product">
+              <img src="img/page-layout-1.jpg" alt="">
+              <div class="sub-product">
+                <b>Aviator</b>
+                <p>Одностраничный макет<br> с авторским дизайном</p>
+                <a class="btn btn-product" href="#">8000 р.</a>
+              </div>
+            </section>
+            <section class="product">
+              <img src="img/page-layout-2.jpg" alt="">
+              <div class="sub-product">
+                <b>Sunset</b>
+                <p>Интернет-магазин<br> с личным кабинетом</p>
+                <a class="btn btn-product" href="#">10000 р.</a>
+              </div>
+            </section>
+            <section class="product">
+              <img src="img/page-layout-3.jpg" alt="">
+              <div class="sub-product">
+                <b>Forte</b>
+                <p>Автономная целевая страница</p>
+                <a class="btn btn-product" href="#">9 000 р.</a>
+              </div>
+            </section>
+            <section class="product">
+              <img src="img/page-layout-4.jpg" alt="">
+              <div class="sub-product">
+                <b>Marquee</b>
+                <p>Лендинг</p>
+                <a class="btn btn-product" href="#">8 500 р.</a>
+              </div>
+            </section>
+            <section class="product">
+              <img src="img/page-layout-5.jpg" alt="">
+              <div class="sub-product">
+                <b>Avenue</b>
+                <p>Корпоративный портал</p>
+                <a class="btn btn-product" href="#">8 000 р.</a>
+              </div>
+            </section>
+            <section class="product">
+              <img src="img/page-layout-6.jpg" alt="">
+              <div class="sub-product">
+                <b>Dovetail</b>
+                <p>Социальная сеть с преферансом и верстальщицами</p>
+                <a class="btn btn-product" href="#">7 500 р.</a>
+              </div>
+            </section>
+          </div>
+          <div class="paginator">
+            <a class="focus" href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a class="next" href="#next">Следующая</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+    	<div class="container">
+    		<div class="footer-top">
+    		  <section class="footer-contacts">
+    				<h2>Herds Desing Studio</h2>
+    				<p>
+    				  191186, Санкт&ndash;Перербург,<br>
+    				  ул. Б.Конюшенная, д. 19/8
+    				</p>
+    				<p>
+    				  тел. +7(812) 275&ndash;75&ndash;75
+    				</p>
+    				<a class="btn btn-footer write-to-us" href="#">Напишите нам</a>
+    			</section>
+    		</div>
+    		<div class="footer-bottom clearfix">
+    			<section class="footer-social">
+    				<a class="vk" href="#">В контакте</a>
+            <a class="fb" href="#">Фейсбук</a>
+            <a class="inst" href="#">Инстаграмм</a>
+    			</section>
+    			<section class="footer-content">
+    			  <span>Давайте дружить, это выгодно!</span>
+    			  <p>Скидка 10% для друзей из социальных сетей.</p>
+    			</section>
+    		</div>
+    	</div>
+    </footer>
+
+    <div class="modal-content">
+      <button class="modal-content-close" type="button">Закрыть</button>
+      <form class="mail-form" action="#" method="post">
+        <div class="half-width">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" class="user-name" name="user-name" id="user-name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+        </div>
+        <div class="half-width half-width-right">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="e-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        </div>
+        <label >Текст письма:</label>
+        <textarea name="message" rows="4" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+        <a class="btn btn-modal-content" href="#">Отправить</a>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
+
+  <script type="text/javascript" src="js/script.js"></script> 
+
+  </body>
+</html>
